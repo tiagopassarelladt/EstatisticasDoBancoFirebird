@@ -1,0 +1,573 @@
+object Form14: TForm14
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'An'#225'lise do banco de dados'
+  ClientHeight = 581
+  ClientWidth = 693
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 8
+    Top = 8
+    Width = 673
+    Height = 569
+    Cursor = crHandPoint
+    ActivePage = TabSheet1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Estat'#237'sticas do banco'
+      object Label1: TLabel
+        Left = 8
+        Top = 18
+        Width = 84
+        Height = 15
+        Caption = 'Vers'#227'o firebird'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 8
+        Top = 42
+        Width = 110
+        Height = 15
+        Caption = 'Tamanho da p'#225'gina'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 8
+        Top = 72
+        Width = 91
+        Height = 15
+        Caption = 'Intervalo Sweep'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 312
+        Top = 18
+        Width = 39
+        Height = 15
+        Caption = 'Dialeto'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 432
+        Top = 18
+        Width = 68
+        Height = 15
+        Caption = 'Vers'#227'o ODS'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 432
+        Top = 42
+        Width = 42
+        Height = 15
+        Caption = 'Buffers'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label7: TLabel
+        Left = 431
+        Top = 72
+        Width = 92
+        Height = 15
+        Caption = 'Modo ShutDown'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 395
+        Top = 138
+        Width = 70
+        Height = 15
+        Caption = 'Modo leitura'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 395
+        Top = 165
+        Width = 80
+        Height = 15
+        Caption = 'Forced Writes'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label14: TLabel
+        Left = 395
+        Top = 192
+        Width = 109
+        Height = 15
+        Caption = 'Reserva de espa'#231'o'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label15: TLabel
+        Left = 395
+        Top = 219
+        Width = 128
+        Height = 15
+        Caption = 'Reserva pag. externas'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label16: TLabel
+        Left = 19
+        Top = 267
+        Width = 74
+        Height = 15
+        Caption = 'ID Estat'#237'stica'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label17: TLabel
+        Left = 395
+        Top = 267
+        Width = 91
+        Height = 15
+        Caption = 'Status NBackup'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label18: TLabel
+        Left = 19
+        Top = 294
+        Width = 84
+        Height = 15
+        Caption = #218'ltimo Restore'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object edtVersaoFB: TEdit
+        Left = 136
+        Top = 16
+        Width = 121
+        Height = 21
+        Color = clInfoBk
+        ReadOnly = True
+        TabOrder = 0
+        StyleElements = [seFont, seBorder]
+      end
+      object edtTamPagina: TEdit
+        Left = 136
+        Top = 43
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 1
+      end
+      object edtIntervaloSWeep: TEdit
+        Left = 136
+        Top = 70
+        Width = 121
+        Height = 21
+        Color = clInfoBk
+        ReadOnly = True
+        TabOrder = 2
+        StyleElements = [seFont, seBorder]
+      end
+      object edtVersaoODS: TEdit
+        Left = 528
+        Top = 16
+        Width = 121
+        Height = 21
+        Color = clInfoBk
+        ReadOnly = True
+        TabOrder = 3
+        StyleElements = [seFont, seBorder]
+      end
+      object edtBuffers: TEdit
+        Left = 528
+        Top = 43
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 4
+      end
+      object edtModoShutdown: TEdit
+        Left = 528
+        Top = 70
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 5
+      end
+      object edtDialeto: TEdit
+        Left = 357
+        Top = 16
+        Width = 53
+        Height = 21
+        Color = clInfoBk
+        ReadOnly = True
+        TabOrder = 6
+        StyleElements = [seFont, seBorder]
+      end
+      object GroupBox1: TGroupBox
+        Left = 8
+        Top = 112
+        Width = 281
+        Height = 137
+        Caption = 'Transa'#231#245'es'
+        TabOrder = 7
+        object Label8: TLabel
+          Left = 16
+          Top = 26
+          Width = 37
+          Height = 15
+          Caption = 'Oldest'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 16
+          Top = 53
+          Width = 75
+          Height = 15
+          Caption = 'Oldest Active'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label10: TLabel
+          Left = 16
+          Top = 80
+          Width = 94
+          Height = 15
+          Caption = 'Oldest Snapshot'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label11: TLabel
+          Left = 16
+          Top = 107
+          Width = 26
+          Height = 15
+          Caption = 'Next'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object edtOldest: TEdit
+          Left = 144
+          Top = 24
+          Width = 121
+          Height = 21
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object edtOldestActive: TEdit
+          Left = 144
+          Top = 51
+          Width = 121
+          Height = 21
+          ReadOnly = True
+          TabOrder = 1
+        end
+        object edtOldestSnapshot: TEdit
+          Left = 144
+          Top = 78
+          Width = 121
+          Height = 21
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object edtNext: TEdit
+          Left = 144
+          Top = 105
+          Width = 121
+          Height = 21
+          ReadOnly = True
+          TabOrder = 3
+        end
+      end
+      object edtModLeitura: TEdit
+        Left = 528
+        Top = 136
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 8
+      end
+      object edtForcedWrithe: TEdit
+        Left = 528
+        Top = 163
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 9
+      end
+      object edtReservaEspaco: TEdit
+        Left = 528
+        Top = 190
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 10
+      end
+      object edtReservaExternas: TEdit
+        Left = 528
+        Top = 217
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 11
+      end
+      object edtID: TEdit
+        Left = 152
+        Top = 265
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 12
+      end
+      object edtStatusNBackup: TEdit
+        Left = 528
+        Top = 265
+        Width = 121
+        Height = 21
+        ReadOnly = True
+        TabOrder = 13
+      end
+      object edtUltimoRestore: TEdit
+        Left = 152
+        Top = 292
+        Width = 497
+        Height = 21
+        Color = clInfoBk
+        ReadOnly = True
+        TabOrder = 14
+        StyleElements = [seFont, seBorder]
+      end
+      object Chart1: TChart
+        Left = 8
+        Top = 320
+        Width = 641
+        Height = 210
+        Cursor = crHandPoint
+        Title.Text.Strings = (
+          'Transa'#231#245'es')
+        View3D = False
+        BevelOuter = bvNone
+        TabOrder = 15
+        DefaultCanvas = 'TGDIPlusCanvas'
+        ColorPaletteIndex = 13
+        object Series2: THorizBarSeries
+          BarBrush.Gradient.Direction = gdLeftRight
+          ColorEachPoint = True
+          Marks.Visible = False
+          Gradient.Direction = gdLeftRight
+          XValues.Name = 'Bar'
+          XValues.Order = loNone
+          YValues.Name = 'Y'
+          YValues.Order = loAscending
+        end
+        object Series1: TBarSeries
+          Active = False
+          Marks.Visible = False
+          XValues.Name = 'X'
+          XValues.Order = loAscending
+          YValues.Name = 'Bar'
+          YValues.Order = loNone
+          Data = {
+            040400000000000000005C8740FF0500000074657374650000000000008940FF
+            060000007465737465320000000000CC8540FF000000000000000000407F40FF
+            00000000}
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Outras Op'#231#245'es'
+      ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Button1: TButton
+        Left = 3
+        Top = 3
+        Width = 121
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'Recalcular indices'
+        TabOrder = 0
+        OnClick = Button1Click
+      end
+      object mo: TMemo
+        Left = 0
+        Top = 34
+        Width = 665
+        Height = 507
+        Align = alBottom
+        ReadOnly = True
+        ScrollBars = ssVertical
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 321
+        Top = 3
+        Width = 162
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'Ajustar a Coleta de Lixo para :'
+        TabOrder = 2
+        OnClick = Button2Click
+      end
+      object Button3: TButton
+        Left = 141
+        Top = 3
+        Width = 162
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'Desativar a Coleta de Lixo'
+        TabOrder = 3
+        OnClick = Button3Click
+      end
+      object Button4: TButton
+        Left = 500
+        Top = 3
+        Width = 162
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'Coletar o Lixo'
+        TabOrder = 4
+        OnClick = Button4Click
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Dados das conex'#245'es ativas'
+      ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object Button5: TButton
+        Left = 472
+        Top = 3
+        Width = 190
+        Height = 25
+        Cursor = crHandPoint
+        Caption = 'Listar dados das conex'#245'es ativas'
+        TabOrder = 0
+        OnClick = Button5Click
+      end
+      object mc: TMemo
+        Left = 0
+        Top = 34
+        Width = 665
+        Height = 507
+        Align = alBottom
+        ReadOnly = True
+        ScrollBars = ssVertical
+        TabOrder = 1
+      end
+    end
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\SUPERSYS10\Dados\SUPERSYS.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=192.168.1.92'
+      'Port=3050'
+      'DriverID=FB')
+    LoginPrompt = False
+    Left = 336
+    Top = 112
+  end
+  object Qry: TFDQuery
+    Connection = FDConnection1
+    Left = 336
+    Top = 160
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    VendorLib = 'C:\supersys10\fbclient.dll'
+    Left = 336
+    Top = 208
+  end
+end
